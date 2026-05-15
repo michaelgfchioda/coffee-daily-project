@@ -1,6 +1,6 @@
 <!-- <h1 align="center"> <strong> CoffeeDaily Project☕ </strong> </h1> -->
 <p align="center">
-  <img width="680" height="215" alt="Banner-logo" src="https://github.com/user-attachments/assets/abcfb2a3-3d3d-443b-ac8d-b1e0221dd308" />
+  <img width="865" height="275 alt="Banner-logo" src="https://github.com/user-attachments/assets/abcfb2a3-3d3d-443b-ac8d-b1e0221dd308" />
 </p>
 
 
