@@ -44,7 +44,7 @@
             "fields": [
               { "key": "PK", "name": "id_venda", "type": "SERIAL" },
               { "key": "", "name": "dt_venda", "type": "DATE" },
-              { "key": "FK", "name": "id_usuario", "type": "INT" }
+              { "key": "FK", "name": "id_usuario", "type": "SERIAL" }
             ]
           },
           {
