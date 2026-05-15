@@ -44,7 +44,7 @@
             "fields": [
               { "key": "PK", "name": "id_venda", "type": "SERIAL" },
               { "key": "", "name": "dt_venda", "type": "DATE" },
-              { "key": "FK", "name": "id_usuario", "type": "SERIAL" }
+              { "key": "FK", "name": "id_usuario", "type": "INT" }
             ]
           },
           {
@@ -55,8 +55,8 @@
               { "key": "PK", "name": "id_item_venda", "type": "SERIAL" },
               { "key": "", "name": "quantidade", "type": "INT" },
               { "key": "", "name": "subtotal", "type": "DECIMAL(10,2)" },
-              { "key": "FK", "name": "id_venda", "type": "SERIAL" },
-              { "key": "FK", "name": "id_produto", "type": "SERIAL" }
+              { "key": "FK", "name": "id_venda", "type": "INT" },
+              { "key": "FK", "name": "id_produto", "type": "INT" }
             ]
           },
           {
@@ -68,17 +68,18 @@
               { "key": "", "name": "forma_pagamento", "type": "VARCHAR(15)" },
               { "key": "", "name": "valor_pago", "type": "DECIMAL(10,2)" },
               { "key": "", "name": "parcelas", "type": "INT" },
-              { "key": "FK", "name": "id_venda", "type": "SERIAL" }
+              { "key": "FK", "name": "id_venda", "type": "INT" }
             ]
           }
         ],
         "lines": [
-          { "from": "tb_usuario", "to": "tb_venda", "type": "1:N" },
-          { "from": "tb_venda", "to": "tb_item_venda", "type": "1:N" },
-          { "from": "tb_produto", "to": "tb_item_venda", "type": "1:N" },
-          { "from": "tb_venda", "to": "tb_pagamento", "type": "1:1" }
+          { "id": "9rPW84m9YeQ6", "from": "tb_usuario", "to": "tb_venda", "type": "1:N" },
+          { "id": "QtPWgfJTonzD", "from": "tb_item_venda", "to": "tb_produto", "type": "N:1" },
+          { "id": "ltPWU-~k6ahl", "from": "tb_venda", "to": "tb_produto", "type": "N:N (Lógica)" },
+          { "id": "8tPW_em5U8Zi", "from": "tb_pagamento", "to": "tb_venda", "type": "1:1" }
         ]
       }
     }
-  ]
+  ],
+  "accountId": 216088579
 }
